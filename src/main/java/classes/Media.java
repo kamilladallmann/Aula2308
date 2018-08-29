@@ -25,4 +25,36 @@ public class Media {
         return med;        
     }
     
+    public int acimaMedia(double[] v){
+        
+        Media m = new Media();
+        double res = m.getMedia(v);
+        int maior = 0;
+        
+        for(int i = 0; i < v.length; i++){
+            
+            if (v[i] > res){
+                maior++;
+            }                    
+        }
+        
+        return maior;        
+    }
+    
+    public int abaixoMedia(double[] v){
+        
+        Media m = new Media();
+        double res = m.getMedia(v);
+        int menor = 0;
+        
+        for(int i = 0; i < v.length; i++){
+            
+            if (v[i] < res){
+                menor++;
+            }                    
+        }
+        
+        return menor;        
+    }
+    
 }
