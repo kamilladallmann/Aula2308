@@ -20,6 +20,24 @@ public class MedianaTest {
         double[] v = {1,2,3,4,5};
         Mediana m = new Mediana();
         double res = m.getMediana(v);
-        assertEquals(3,res,0.01);
+        assertEquals(3, res, 0.01);
+    }
+    
+    @Test
+    public void testeVetorOrdenadoPar(){
+        double[] v = {1,2,3,4,5,6};
+        Mediana m = new Mediana();
+        double res = m.getMediana(v);
+        assertEquals(3.5, res, 0.01);
+    }
+    
+    @Test
+    public void testeVetorDesordenadoImpar(){
+        
+    }
+    
+    @Test
+    public void testeVetorDesordenadoPar(){
+        
     }
 }
