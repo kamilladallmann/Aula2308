@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
 public class MediaTest {
     
    @Test
-    public void testeVetorOrdenadoImpar(){
+    public void testeMedia(){
         double[] v = {1,2,3,4,5,6};
         Media m = new Media();
         double res = m.getMedia(v);
